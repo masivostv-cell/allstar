@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Star Music | Grupo musical</title>
+  <meta name="description" content="All Star Music: grupo musical profesional para eventos sociales, empresariales y privados." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="#inicio" aria-label="All Star Music">
+        <span class="brand-star">★</span>
+        <span id="brandName">All Star Music</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#quienes-somos">Quiénes somos</a>
+        <a href="#fundador">Fundador</a>
+        <a href="#toques">Toques</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#galeria">Fotos</a>
+        <a href="#contacto" class="btn btn-small">Contratar</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-overlay"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Grupo musical profesional</p>
+          <h1 id="heroTitle">All Star Music</h1>
+          <p class="hero-text" id="heroSubtitle">
+            Música en vivo para eventos memorables, con elegancia, energía y sonido profesional.
+          </p>
+          <div class="hero-actions">
+            <a href="#contacto" class="btn">Solicitar cotización</a>
+            <a href="#agenda" class="btn btn-outline">Ver agenda</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="star-orbit">
+            <span>★</span>
+          </div>
+          <h2 id="heroCardTitle">Sonido profesional</h2>
+          <p id="heroCardText">Presentaciones para bodas, fiestas, empresas, ferias y eventos privados.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="quienes-somos" class="fade-up" class="fade-up">
+      <div class="container split">
+        <div>
+          <p class="section-kicker">Identidad musical</p>
+          <h2>¿Quiénes somos?</h2>
+        </div>
+        <p class="lead" id="aboutText">
+          Somos All Star Music, una agrupación creada para llevar música en vivo con calidad, presencia escénica y repertorio versátil a cada celebración.
+        </p>
+      </div>
+
+      <div class="container stats" id="statsContainer"></div>
+    </section>
+
+    <section class="section section-dark" id="fundador" class="fade-up" class="fade-up">
+      <div class="container founder-grid">
+        <div class="founder-photo">
+          <div class="photo-placeholder">
+            <span>★</span>
+            <small>Foto del fundador</small>
+          </div>
+        </div>
+        <div>
+          <p class="section-kicker">Dirección artística</p>
+          <h2 id="founderName">Fundador</h2>
+          <h3 id="founderRole">Fundador y director musical</h3>
+          <p id="founderBio">
+            Espacio para contar la historia del fundador, su trayectoria musical, experiencia en tarima y visión artística del grupo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="toques" class="fade-up" class="fade-up">
+      <div class="container section-title">
+        <p class="section-kicker">Presentaciones</p>
+        <h2>Nuestros toques</h2>
+        <p>Agenda de presentaciones, eventos destacados y próximas fechas.</p>
+      </div>
+
+      <div class="container cards-grid" id="toquesContainer"></div>
+    </section>
+
+    <section class="section section-dark" id="servicios" class="fade-up" class="fade-up">
+      <div class="container section-title">
+        <p class="section-kicker">Lo que ofrecemos</p>
+        <h2>Nuestros servicios</h2>
+        <p>Soluciones musicales para eventos sociales, empresariales y culturales.</p>
+      </div>
+
+      <div class="container cards-grid" id="servicesContainer"></div>
+    </section>
+
+    <section class="section" id="agenda">
+      <div class="container section-title">
+        <p class="section-kicker">Calendario</p>
+        <h2>Agenda de Google</h2>
+        <p id="calendarNote">Aquí aparecerá la agenda oficial del grupo cuando pegues el enlace de Google Calendar.</p>
+      </div>
+
+      <div class="container calendar-box" id="calendarBox">
+        <div class="calendar-empty">
+          <span>★</span>
+          <h3>Agenda pendiente por conectar</h3>
+          <p>Desde el panel de edición puedes pegar el enlace de inserción de Google Calendar.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="galeria" class="fade-up" class="fade-up">
+      <div class="container section-title">
+        <p class="section-kicker">Momentos</p>
+        <h2>Galería de fotos</h2>
+        <p>Espacio para presentaciones, ensayos, eventos y recuerdos del grupo.</p>
+      </div>
+
+      <div class="container gallery-grid" id="galleryContainer"></div>
+    </section>
+
+    <section class="section contact-section" id="contacto" class="fade-up" class="fade-up">
+      <div class="container contact-grid">
+        <div>
+          <p class="section-kicker">Contrataciones</p>
+          <h2>Haz que tu evento suene profesional</h2>
+          <p id="contactText">Escríbenos para cotizar disponibilidad, repertorio y formato musical.</p>
+        </div>
+
+        <div class="contact-card">
+          <p><strong>Teléfono:</strong> <span id="contactPhone">Por definir</span></p>
+          <p><strong>Correo:</strong> <span id="contactEmail">Por definir</span></p>
+          <p><strong>Ubicación:</strong> <span id="contactLocation">Colombia</span></p>
+          <div class="contact-actions">
+            <a id="whatsappBtn" class="btn" href="#" target="_blank" rel="noopener">WhatsApp</a>
+            <a id="emailBtn" class="btn btn-outline" href="#">Correo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <p>© <span id="year"></span> <span id="footerBrand">All Star Music</span>. Todos los derechos reservados.</p>
+      <div class="footer-links" id="socialLinks"></div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+
+<script>
+const faders = document.querySelectorAll('.fade-up');
+const appearOptions = { threshold: 0.1 };
+const appearOnScroll = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('show');
+      observer.unobserve(entry.target);
+    }
+  });
+}, appearOptions);
+
+faders.forEach(fader => appearOnScroll.observe(fader));
+</script>
+
+<script>
+const faders = document.querySelectorAll('.fade-up');
+const appearOptions = { threshold: 0.1 };
+const appearOnScroll = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('show');
+      observer.unobserve(entry.target);
+    }
+  });
+}, appearOptions);
+
+faders.forEach(fader => appearOnScroll.observe(fader));
+</script>
+</body>
+
+
+</html>
